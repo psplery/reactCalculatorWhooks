@@ -3,7 +3,8 @@ import "./App.css";
 import Display from "./Display";
 import NumPad from "./NumPad";
 import DebugInfo from "./DebugInfo";
-// https://github.com/psplery/reactCalculatorWhooks.git
+import Todo from "./Todo";
+
 function App() {
   const [input, setInput] = useState(0);
   const [buffer, setBuffer] = useState(0);
@@ -63,6 +64,7 @@ function App() {
         evalFunction={evaluateCalulation}
       />
       <DebugInfo input={input} buffer={buffer} operation={operation} />
+      <Todo />
     </div>
   );
 }

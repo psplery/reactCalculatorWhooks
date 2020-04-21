@@ -3,7 +3,7 @@ import React from "react";
 function Display({ curVal }) {
   return (
     <>
-      <div>Bla: {curVal}</div>
+      <div>{curVal}</div>
     </>
   );
 }
